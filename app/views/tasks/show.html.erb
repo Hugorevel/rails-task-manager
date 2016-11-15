@@ -1,0 +1,8 @@
+<h2> <%= @task.name %></h2>
+<p> <%= @task.description %></p>
+
+<%= link_to "Edit this task?", edit_task_path(@task) %>
+
+<%= link_to "Destroy this task?", destroy_task_path(@task), method: :delete %>
+
+<%= link_to "Back to Tasks Manager", tasks_path %>
